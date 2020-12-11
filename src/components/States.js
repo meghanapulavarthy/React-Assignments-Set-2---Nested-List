@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import City from "./City";
 
-export default function State({ states }){
+export default function State({ states }) {
   const [cityIndex, setCityIndex] = useState(-1);
   const [TownIndex, setTownIndex] = useState(-1);
 
@@ -31,4 +31,4 @@ export default function State({ states }){
       {cityIndex !== -1 && <City index={TownIndex} city={states[cityIndex]} />}
     </>
   );
-};
+}
